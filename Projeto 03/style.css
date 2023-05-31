@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Carousel */
+.carousel-inner img{
+  height: 50vh;
+}
+
+/* Section Conteudo */
+#border-icon {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+#border-icon p{
+    padding: 90px 30px;
+} 
+.icon-right{
+    position: absolute;
+    top: 70px;
+    left: 60px;
+}
+.icon-left{
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+}
+#border-icon span:first-of-type{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 95%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, rgb(255, 30, 0));
+    animation: animar1 2s linear infinite;
+}
+@keyframes animar1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:  translateX(100%);
+    }
+}
+#border-icon span:nth-of-type(2){
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    width: 95%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, rgb(255, 30, 0));
+    animation: animar2 2s linear infinite;
+}
+@keyframes animar2{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform:  translateX(-100%);
+    }
+}
+
+/* Cards */
+#card {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#card img{
+    height: 20vh;
+}
+.card{
+    transition: 0.3s;
+}   
+
+/* Formulario */
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rosybrown;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+#form div{
+    width: 50%;
+}
+
+/* Hover */
+.card:hover{
+    border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
