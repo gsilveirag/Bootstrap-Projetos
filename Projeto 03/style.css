@@ -3,10 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* NavBar */
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 10px;
+}
+.navbar a:hover{
+    color: #bbbdbb;
+}
 
 /* Carousel */
 .carousel-inner img{
   height: 50vh;
+  width: 60vw;
+}
+#carousel{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
 }
 
 /* Section Conteudo */
@@ -17,6 +32,8 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
+    background-color: azure;
 }
 #border-icon p{
     padding: 90px 30px;
@@ -37,7 +54,7 @@
     left: 0;
     width: 95%;
     height: 3px;
-    background: linear-gradient(to right, transparent, rgb(255, 30, 0));
+    background: linear-gradient(to right, transparent, rgb(194, 189, 188));
     animation: animar1 2s linear infinite;
 }
 @keyframes animar1{
@@ -54,7 +71,7 @@
     right: 0px;
     width: 95%;
     height: 3px;
-    background: linear-gradient(to left, transparent, rgb(255, 30, 0));
+    background: linear-gradient(to left, transparent,  rgb(194, 189, 188));
     animation: animar2 2s linear infinite;
 }
 @keyframes animar2{
@@ -69,8 +86,10 @@
 /* Cards */
 #card {
     display: flex;
+    text-align: center;
     justify-content: space-around;
     gap: 10px;
+    margin-top: 3px;
 }
 
 #card img{
@@ -86,12 +105,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid rosybrown;
     padding: 20px 0px;
     margin-top: 20px;
 }
 #form div{
     width: 50%;
+}
+#form button{
+    gap: 10px;
+    margin-top: 10px;
 }
 
 /* Hover */
